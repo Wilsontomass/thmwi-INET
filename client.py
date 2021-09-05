@@ -81,7 +81,7 @@ class Client():
 
             for thread in self.threads:
                 thread.join(0.1)
-                if thread.isAlive():
+                if thread.is_alive():
                     continue
                 win = True
                 break
